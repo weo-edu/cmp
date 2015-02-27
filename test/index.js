@@ -15,7 +15,13 @@ describe('cmp', function() {
 
   it('should be compatible with Array.prototype.sort', function() {
     var arr = 'abcdefghijklmnopqrstuvwxyz'.split('');
-    var reversed = arr.slice().reverse();
-    expect(reversed.sort(cmp(charCode))).to.eql(arr);
+    var rev = arr.slice().reverse();
+    expect(rev.sort(cmp(charCode))).to.eql(arr);
+  });
+
+  it('should be able to grab properties', function() {
+    var arr = [{a: 1}, {a: 2}, {a: 3}];
+    var rev = arr.slice().reverse();
+    expect(rev.sort(cmp('a'))).to.eql(arr);
   });
 });
