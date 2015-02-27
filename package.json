@@ -1,0 +1,33 @@
+{
+  "name": "cmp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/weo-edu/cmp"
+  },
+  "keywords": [
+    "compare",
+    "cmp",
+    "comparator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weo-edu/cmp/issues"
+  },
+  "homepage": "https://github.com/weo-edu/cmp",
+  "dependencies": {
+    "prop": "git://github.com/weo-edu/prop"
+  },
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "mocha": "^2.1.0"
+  }
+}
